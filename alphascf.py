@@ -53,24 +53,6 @@ for file_name in files:
                 # Update the shortcut with the new paths
                 shortcut.path = final_target_path
                 shortcut.working_directory = final_start_in_path
-                shortcut.save()
+                shortcut.write()  # Use write() to save changes
 
-                logging.info(f'Successfully updated {file_path}')
-                print(f'Successfully updated {file_path}')
-            else:
-                logging.info(f'No changes made to {file_path}')
-                print(f'No changes made to {file_path}')
-        except Exception as e:
-            logging.error(f'Failed to update {file_path}: {str(e)}')
-            print(f'Failed to update {file_path}: {str(e)}')
-
-    # Update the progress bar
-    progress_bar.update(1)
-
-# Close the progress bar
-progress_bar.close()
-
-# Log if no changes were made
-if not changes_made:
-    logging.info('No changes were made during this run.')
-    print('No changes were made during this run.')
+                logging.info
