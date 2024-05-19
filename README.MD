@@ -81,3 +81,5 @@ This project is licensed under the GNU GENERAL PUBLIC LICENSE
 - **Check paths**: Make sure the paths you enter are valid and accessible.
 
 By following these instructions, users can easily understand and use the scripts to update their shortcut files.
+
+© 2024 MarioVM
