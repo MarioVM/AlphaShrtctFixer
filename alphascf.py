@@ -87,5 +87,8 @@ def main():
     else:
         print("The specified path is not a valid directory.")
 
+    # Keep the console window open until the user presses Enter
+    input("Press Enter to close the window...")
+
 if __name__ == "__main__":
     main()
